@@ -1,0 +1,110 @@
+{
+  "version": "0.1",
+  "sources": {
+    "BRE_DG251": {
+      "title": "BRE Digest 251: Assessment of damage in low-rise buildings (Driscoll, 1995)",
+      "url": "https://bregroup.com/store/bookshop/assessment-of-damage-in-low-rise-buildings-progressive-foundation-movement-revised-1995-dg-251",
+      "type": "guidance"
+    },
+    "BRE_ASSESS": {
+      "title": "BRE: Assessing cracks in houses",
+      "url": "https://bregroup.com/insights/assessing-cracks-in-houses/",
+      "type": "guidance"
+    },
+    "ICOMOS_2003": {
+      "title": "ICOMOS Charter: Principles for the analysis, conservation and structural restoration of architectural heritage (2003)",
+      "url": "https://predmet.fa.uni-lj.si/inded/02_listine/listine_ICOMOS.html",
+      "type": "charter"
+    },
+    "ACI_224R_01": {
+      "title": "ACI 224R-01: Control of Cracking in Concrete Structures",
+      "url": "https://www.concrete.org/publications/internationalconcreteabstractsportal/m/details/id/10632",
+      "type": "standard"
+    },
+    "PROJECT_POLICY": {
+      "title": "Project policy (conservative design decision, to be reviewed by the supervisor / a structural engineer)",
+      "url": "",
+      "type": "policy"
+    }
+  },
+  "policy": {
+    "low_max_mm": 5.0,
+    "moderate_max_mm": 15.0,
+    "bands_basis": ["BRE_DG251", "PROJECT_POLICY"],
+    "widespread_min_cracks": 3,
+    "widespread_min_length_ratio": 0.6,
+    "widespread_basis": ["PROJECT_POLICY"]
+  },
+  "items": {
+    "R_DISCLAIMER": {
+      "en": "Preliminary visual assessment only. It is not a structural safety diagnosis and does not replace a qualified engineer.",
+      "ar": "هذا تقييم بصري أولي فقط، وليس تشخيصًا لسلامة المبنى إنشائيًا، ولا يغني عن مهندس مختص.",
+      "basis": ["PROJECT_POLICY"]
+    },
+    "R_NO_DETECTION": {
+      "en": "No crack was detected by the model. This does not mean the surface is sound: thin cracks, poor light or a long distance can be missed.",
+      "ar": "لم يكتشف النموذج شرخًا. هذا لا يعني أن السطح سليم، فقد تفوت النموذج شروخ دقيقة أو صور سيئة الإضاءة أو بعيدة.",
+      "basis": ["PROJECT_POLICY"]
+    },
+    "R_RETAKE": {
+      "en": "A crack is possible but the result is uncertain. Retake the photo closer, in even light, facing the surface straight on.",
+      "ar": "يُحتمل وجود شرخ لكن النتيجة غير مؤكدة. أعد التصوير من مسافة أقرب وبإضاءة متساوية وبزاوية عمودية على السطح.",
+      "basis": ["PROJECT_POLICY"]
+    },
+    "R_ADD_SCALE": {
+      "en": "Crack width cannot be estimated without a scale. Measure it with a ruler or crack gauge, or place an object of known size next to the crack when photographing.",
+      "ar": "لا يمكن تقدير عرض الشرخ دون مقياس. قِس العرض بمسطرة أو مقياس شروخ، أو ضع جسمًا معلوم الحجم بجانب الشرخ عند التصوير.",
+      "basis": ["PROJECT_POLICY"]
+    },
+    "R_DOCUMENT": {
+      "en": "Document the crack: date, location, photos with a scale reference and a width measurement. Changes in width over time affect how a crack is classified.",
+      "ar": "وثّق الشرخ: التاريخ والموقع وصور مع مقياس وقياس العرض. تغيّر العرض مع الزمن يؤثر على تصنيف الشرخ.",
+      "basis": ["BRE_ASSESS"]
+    },
+    "R_MONITOR": {
+      "en": "Re-check periodically and note whether the crack is getting longer or wider.",
+      "ar": "أعد الفحص دوريًا ولاحظ هل يزداد الشرخ طولًا أو عرضًا.",
+      "basis": ["BRE_ASSESS"]
+    },
+    "R_AESTHETIC_NOTE": {
+      "en": "Cracks up to about 5 mm in low-rise masonry walls are generally regarded as aesthetic (BRE categories 0-2), but confirm the cause before any treatment.",
+      "ar": "الشروخ حتى نحو 5 مم في جدران المباني منخفضة الارتفاع المبنية بالطوب تُعدّ عادةً تجميلية (الفئات 0-2 في BRE)، لكن تأكد من السبب قبل أي معالجة.",
+      "basis": ["BRE_ASSESS", "BRE_DG251"]
+    },
+    "R_PROF_INSPECT": {
+      "en": "Professional inspection recommended by a qualified building or structural professional.",
+      "ar": "يُوصى بمعاينة من متخصص مؤهل (مهندس إنشائي أو خبير مباني).",
+      "basis": ["BRE_ASSESS", "PROJECT_POLICY"]
+    },
+    "R_PROF_URGENT": {
+      "en": "Immediate professional assessment recommended.",
+      "ar": "يُوصى بتقييم متخصص عاجل.",
+      "basis": ["BRE_DG251", "PROJECT_POLICY"]
+    },
+    "R_WARNING_SIGNS": {
+      "en": "Treat the situation as urgent if you notice walls leaning or bulging, a crack that grows quickly, or falling material.",
+      "ar": "اعتبر الحالة عاجلة إن لاحظت ميلان جدران أو انتفاخًا أو نموًا سريعًا للشرخ أو تساقط مواد.",
+      "basis": ["BRE_ASSESS", "PROJECT_POLICY"]
+    },
+    "R_NO_DIY": {
+      "en": "Do not attempt structural repairs based on this app's result.",
+      "ar": "لا تحاول إجراء إصلاحات إنشائية اعتمادًا على نتيجة هذا التطبيق.",
+      "basis": ["PROJECT_POLICY"]
+    },
+    "R_PATTERN": {
+      "en": "Diagonal or widespread cracking can indicate building movement. A professional should look at the crack pattern, not only the width.",
+      "ar": "الشروخ المائلة أو المنتشرة قد تدل على حركة في المبنى، ويجب أن يفحص المتخصص نمط الشروخ وليس عرضها فقط.",
+      "basis": ["BRE_DG251", "PROJECT_POLICY"]
+    },
+    "R_HERITAGE": {
+      "en": "Historic building: modern code limits may not apply, and diagnosis needs a multidisciplinary approach (observation, history, monitoring). Consult a heritage-structures specialist before any intervention.",
+      "ar": "مبنى تاريخي: قد لا تنطبق حدود الأكواد الحديثة، والتشخيص يتطلب نهجًا متعدد التخصصات (ملاحظة ميدانية ودراسة تاريخية ومراقبة). استشر متخصصًا في المنشآت التراثية قبل أي تدخل.",
+      "basis": ["ICOMOS_2003"]
+    },
+    "R_CONCRETE_SCOPE": {
+      "en": "Reinforced-concrete members: acceptable crack widths depend on exposure and design, so consult an engineer. The severity bands here come from low-rise masonry guidance and are not an acceptance criterion for reinforced concrete.",
+      "ar": "عناصر الخرسانة المسلحة: حدود عرض الشرخ المقبول تعتمد على التعرض والتصميم، فاستشر مهندسًا. فئات الشدة هنا مأخوذة من إرشادات المباني منخفضة الارتفاع المبنية بالطوب ولا تمثل معيار قبول للخرسانة المسلحة.",
+      "basis": ["ACI_224R_01", "PROJECT_POLICY"]
+    }
+  }
+}
